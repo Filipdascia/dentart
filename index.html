@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigiDent Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #1e1e2f;
+      padding: 20px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('hero-image.jpg') center/cover no-repeat;
+      color: white;
+      padding: 120px 40px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .cta-buttons button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 16px;
+      margin: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .services, .technology {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .service, .tech {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .service img, .tech img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #1e1e2f;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .contact-form button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>DigiDent Studio</strong></div>
+    <nav>
+      <a href="#usluge">Usluge</a>
+      <a href="#tehnologija">Tehnologija</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Digitalna preciznost za savršene protetske radove</h1>
+    <p>Od skena do dizajna – digitalna obrada zuba, implantata i vodiča.</p>
+    <div class="cta-buttons">
+      <button>Zatraži saradnju</button>
+      <button>Pošalji fajl</button>
+    </div>
+  </section>
+
+  <section id="usluge">
+    <h2>Naše usluge</h2>
+    <div class="services">
+      <div class="service">
+        <img src="icon1.png" alt="Digitalni dizajn zuba">
+        <h3>Digitalni dizajn zuba</h3>
+        <p>Krunice, mostovi, inleji/onleji na osnovu STL fajlova.</p>
+      </div>
+      <div class="service">
+        <img src="icon2.png" alt="Implantološke suprastrukture">
+        <h3>Implantološke suprastrukture</h3>
+        <p>Individualni abatmenti, barski sistemi, screw-retained radovi.</p>
+      </div>
+      <div class="service">
+        <img src="icon3.png" alt="Surgical guide-ovi">
+        <h3>Surgical guide-ovi</h3>
+        <p>Planiranje i izrada vodiča za preciznu hiruršku ugradnju.</p>
+      </div>
+      <div class="service">
+        <img src="icon4.png" alt="3D modeli i CAM fajlovi">
+        <h3>3D modeli i CAM fajlovi</h3>
+        <p>Fajlovi za frezovanje i štampu – spremno za proizvodnju.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tehnologija">
+    <h2>Tehnologija</h2>
+    <div class="technology">
+      <div class="tech">
+        <img src="icon5.png" alt="Softveri">
+        <h4>Softveri</h4>
+        <p>Exocad, 3Shape, BlueSky Plan, Blender for Dental</p>
+      </div>
+      <div class="tech">
+        <img src="icon6.png" alt="Formati fajlova">
+        <h4>Formati fajlova</h4>
+        <p>STL, PLY, OBJ, DICOM</p>
+      </div>
+      <div class="tech">
+        <img src="icon7.png" alt="Kompatibilni uređaji">
+        <h4>Kompatibilni uređaji</h4>
+        <p>Medit, iTero, Roland, Anycubic, vhf i drugi</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontaktirajte nas</h2>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Vaše ime" required />
+        <input type="email" placeholder="Email adresa" required />
+        <textarea rows="5" placeholder="Vaša poruka..."></textarea>
+        <button type="submit">Pošalji</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 DigiDent Studio | kontakt@digident.rs | +381 60 XXX XXXX
+  </footer>
+</body>
+</html>
